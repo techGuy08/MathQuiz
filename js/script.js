@@ -56,7 +56,6 @@ window.addEventListener("load", function () {
     AllAnswersHTML = AllAnswers.shuffle()
       .map((el) => `<button class="mathQuiz_answers-item">${el}</button>`)
       .join("");
-    console.log(AllAnswersHTML);
     let QHTML = `
       <div class="mathQuiz-item ${i === 0 ? "active" : ""}">
       <header class="mathQuiz_header">
@@ -101,7 +100,6 @@ window.addEventListener("load", function () {
       btn.disabled = true;
     });
     const nextBtn = AllQuestionsEl[index].querySelector(".mathQuiz-item_next");
-    console.log(nextBtn);
     nextBtn.classList.add("active");
     nextBtn.onclick = function () {
       gotoQuestion(progress.question);
