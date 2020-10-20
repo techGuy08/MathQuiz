@@ -27,8 +27,8 @@ window.addEventListener("load", function () {
     // },
   ];
   for (let i = 1; i <= 10; i++) {
-    let n1 = Math.floor(Math.random() * (10 * i)) + 1;
-    let n2 = Math.floor(Math.random() * (10 * i)) + 1;
+    let n1 = Math.floor(Math.random() * (5 * i)) + 1;
+    let n2 = Math.floor(Math.random() * (5 * i)) + 1;
     let ans = n1 * n2;
     let question = {
       n1,
