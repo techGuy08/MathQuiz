@@ -14,18 +14,7 @@ Array.prototype.shuffle = function () {
 window.addEventListener("load", function () {
   const mathQuizEl = document.getElementById("mathQuiz");
   const mathQuizModalEl = document.getElementById("mathQuiz-modal");
-  const QAData = [
-    // {
-    //   n1: 1,
-    //   n2: 23,
-    //   ans: 24,
-    // },
-    // {
-    //   n1: 8,
-    //   n2: 9,
-    //   ans: 17,
-    // },
-  ];
+  const QAData = [];
   for (let i = 1; i <= 10; i++) {
     let n1 = Math.floor(Math.random() * (5 * i)) + 1;
     let n2 = Math.floor(Math.random() * (5 * i)) + 1;
