@@ -9,19 +9,38 @@ body {
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
 }
-.mathQuiz .title {
-  font-size: 4rem;
-  text-align: center;
-  margin: 5px auto;
-}
-.mathQuiz-item {
+.mathQuiz-body {
+  position: relative;
   max-width: 80%;
   margin: 2% auto 0;
   background: #2d6187;
   min-height: 75vh;
   border-radius: 18px;
-  padding: 20px;
+  padding: 25px 20px;
   box-shadow: 6px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.mathQuiz .title {
+  font-size: 4rem;
+  text-align: center;
+  margin: 5px auto;
+}
+.mathQuiz-timer {
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+  color: #444;
+  font-size: 20px;
+  background: #fff;
+  padding: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  min-width: 50px;
+  text-align: center;
+}
+.mathQuiz-timer.red{
+  color: #fa3232;
+}
+.mathQuiz-item {
   transition: 0.3s;
   display: none;
 }

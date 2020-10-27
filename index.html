@@ -9,14 +9,20 @@
   <body>
     <div class="wrapper">
       <div id="mathQuiz" class="mathQuiz">
-        <h1 class="title">Math Quiz</h1>
+        <div class="mathQuiz-header">
+          <h1 class="title">Math Quiz</h1>
+        </div>
+        <div class="mathQuiz-body">
+          <p class="mathQuiz-timer">0:00</p>
+        </div>
       </div>
       <div class="mathQuiz-modal" id="mathQuiz-modal">
         <div class="bg"></div>
         <div class="modal_content">
           <h2 class="title">Results</h2>
           <p>Correct Answers : <span class="Res-wins">4</span></p>
-          <p>Wrong Answers : <span class="Res-miss">0</span></p>
+          <p>Wrong Answers : <span class="Res-wrong">0</span></p>
+          <p>missed Answers : <span class="Res-miss">0</span></p>
           <p class="score">
             Your score <br /><span class="Res-score">4/4</span>
           </p>
